@@ -1,0 +1,37 @@
+h3 {
+    color: red !important;
+    font-family: Lobster;
+    font-size: 30px;
+
+}
+
+label {
+    color: whitesmoke;
+    margin: auto;
+}
+
+h6 {
+    color: whitesmoke;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        background-color: whitesmoke;
+        position: relative;
+    }
+
+    h3 {
+        margin-left: 20px;
+    }
+
+    label {
+        font-size: 0;
+    }
+
+    .mapul {
+        padding-top: 60px;
+    }
+
+
+}
