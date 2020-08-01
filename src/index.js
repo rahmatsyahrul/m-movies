@@ -2,6 +2,16 @@ import "./style/style.css";
 import $ from "jquery";
 import moment from "moment";
 
+class ImageFigure extends HTMLElement {
+    connectedCallback() {
+        this.src = this.getAttribute("src") || null;
+        this.alt = this.getAttribute("alt") || null;
+
+        this.innerHTML = `<figure> <img src="${this.src}" </figure>`;
+    }
+}
+customElements.define("image-figure", ImageFigure);
+
 const displayTime = () => {
     moment.locale("id");
     $(".time").text(moment().format("LTS"));
